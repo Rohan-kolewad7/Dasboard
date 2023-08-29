@@ -1,0 +1,5 @@
+rasa interactive -m C:\Users\User\miniconda3\envs\ProjectML\rasa_project02\models\20230829-232838-late-fruit.tar --skip-visualization
+
+
+
+rasa interactive -m models --skip-visualization             # for latest model without path

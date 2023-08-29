@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-States",
+      "2": "I-States",
+      "3": "L-States",
+      "4": "U-States",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-States": 1,
+      "I-States": 2,
+      "L-States": 3,
+      "U-States": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

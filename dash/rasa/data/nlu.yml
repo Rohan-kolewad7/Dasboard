@@ -1,0 +1,216 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: confirm
+  examples: |
+    - Yes
+    - Sure
+    - Of course
+    - Okay
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - exit
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: ask_rainfall_deviation_2017
+  examples: |
+    - What was the deviation in rainfall for [Uttar Pradesh](States) in 2017?
+    - Tell me the rainfall deviation for [Assam](States) in 2017.
+    - How much was the deviation in rainfall in 2017 for [Tamil Nadu](States)?
+- intent: ask_rainfall_actual_2018
+  examples: |
+    - What was the actual rainfall in 2018 for [Gujarat](States)?
+    - Tell me the rainfall data for [Kerala](States) in 2018.
+    - How much rainfall occurred in [Maharashtra](States) during 2018?
+- intent: ask_rainfall_normal_2018
+  examples: |
+    - What is the normal rainfall for [Haryana](States) in 2018?
+    - Give me the average normal rainfall in 2018 for [Punjab](States).
+    - What was the expected rainfall in 2018 for [Rajasthan](States)?
+- intent: ask_rainfall_deviation_2018
+  examples: |
+    - What was the deviation in rainfall for [Uttar Pradesh](States) in 2018?
+    - Tell me the rainfall deviation for [Assam](States) in 2018.
+    - How much was the deviation in rainfall in 2018 for [Tamil Nadu](States)?
+- intent: ask_rainfall_actual_2019
+  examples: |
+    - What was the actual rainfall in 2019 for [Gujarat](States)?
+    - Tell me the rainfall data for [Kerala](States) in 2019.
+    - How much rainfall occurred in [Maharashtra](States) during 2019?
+- intent: ask_rainfall_normal_2019
+  examples: |
+    - What is the normal rainfall for [Haryana](States) in 2019?
+    - Give me the average normal rainfall in 2019 for [Punjab](States).
+    - What was the expected rainfall in 2019 for [Rajasthan](States)?
+- intent: ask_rainfall_deviation_2019
+  examples: |
+    - What was the deviation in rainfall for [Uttar Pradesh](States) in 2019?
+    - Tell me the rainfall deviation for [Assam](States) in 2019.
+    - How much was the deviation in rainfall in 2019 for [Tamil Nadu](States)?
+- intent: ask_rainfall_actual_2020
+  examples: |
+    - What was the actual rainfall in 2020 for [Gujarat](States)?
+    - Tell me the rainfall data for [Kerala](States) in 2020.
+    - How much rainfall occurred in [Maharashtra](States) during 2020?
+- intent: ask_rainfall_normal_2020
+  examples: |
+    - What is the normal rainfall for [Haryana](States) in 2020?
+    - Give me the average normal rainfall in 2020 for [Punjab](States).
+    - What was the expected rainfall in 2020 for [Rajasthan](States)?
+- intent: ask_rainfall_actual_2021
+  examples: |
+    - What was the actual rainfall in 2021 for [Gujarat](States)?
+    - Tell me the rainfall data for [Kerala](States) in 2021.
+    - How much rainfall occurred in [Maharashtra](States) during 2021?
+    - What was the actual rainfall in 2021?[]{"entity": "States", "value": "Gujarat"}
+- intent: ask_rainfall_normal_2021
+  examples: |
+    - What is the normal rainfall for [Haryana](States) in 2021?
+    - Give me the average normal rainfall in 2021 for [Punjab](States).
+    - What was the expected rainfall in 2021 for [Rajasthan](States)?
+- intent: ask_rainfall_deviation_2021
+  examples: |
+    - What was the deviation in rainfall for [Uttar Pradesh](States) in 2021?
+    - Tell me the rainfall deviation for [Assam](States) in 2021.
+    - How much was the deviation in rainfall in 2021 for [Tamil Nadu](States)?
+- intent: ask_rainfall_actual_cumulative
+  examples: |
+    - What was the actual cumulative rainfall for [Gujarat](States)?
+    - Tell me the cumulative rainfall data for [Kerala](States).
+    - How much cumulative rainfall occurred in [Maharashtra](States)?
+- intent: ask_rainfall_normal_cumulative
+  examples: |
+    - What is the normal cumulative rainfall for [Haryana](States)?
+    - Give me the average normal cumulative rainfall for [Punjab](States).
+    - What was the expected cumulative rainfall for [Rajasthan](States)?
+- intent: ask_rainfall_deviation_cumulative
+  examples: |
+    - What was the deviation in cumulative rainfall for [Uttar Pradesh](States)?
+    - Tell me the cumulative rainfall deviation for [Assam](States).
+    - How much was the deviation in cumulative rainfall for [Tamil Nadu](States)?
+- intent: ask_rainfall_actual_2014
+  examples: |
+    - What was the actual rainfall in 2014 for [Gujarat](States)?
+    - Tell me the rainfall data for [Kerala](States) in 2014.
+    - How much rainfall occurred in [Maharashtra](States) during 2014?
+- intent: ask_rainfall_normal_2014
+  examples: |
+    - What is the normal rainfall for [Haryana](States) in 2014?
+    - Give me the average normal rainfall in 2014 for [Punjab](States).
+    - What was the expected rainfall in 2014 for [Rajasthan](States)?
+- intent: ask_rainfall_deviation_2014
+  examples: |
+    - What was the deviation in rainfall for [Uttar Pradesh](States) in 2014?
+    - Tell me the rainfall deviation for [Assam](States) in 2014.
+    - How much was the deviation in rainfall in 2014 for [Tamil Nadu](States)?
+- intent: ask_rainfall_actual_2015
+  examples: |
+    - What was the actual rainfall in 2015 for [Gujarat](States)?
+    - Tell me the rainfall data for [Kerala](States) in 2015.
+    - How much rainfall occurred in [Maharashtra](States) during 2015?
+- intent: ask_rainfall_normal_2015
+  examples: |
+    - What is the normal rainfall for [Haryana](States) in 2015?
+    - Give me the average normal rainfall in 2015 for [Punjab](States).
+    - What was the expected rainfall in 2015 for [Rajasthan](States)?
+- intent: ask_rainfall_deviation_2015
+  examples: |
+    - What was the deviation in rainfall for [Uttar Pradesh](States) in 2015?
+    - Tell me the rainfall deviation for [Assam](States) in 2015.
+    - How much was the deviation in rainfall in 2015 for [Tamil Nadu](States)?
+- intent: ask_rainfall_actual_2016
+  examples: |
+    - What was the actual rainfall in 2016 for [Gujarat](States)?
+    - Tell me the rainfall data for [Kerala](States) in 2016.
+    - How much rainfall occurred in [Maharashtra](States) during 2016?
+- intent: ask_rainfall_normal_2016
+  examples: |
+    - What is the normal rainfall for [Haryana](States) in 2016?
+    - Give me the average normal rainfall in 2016 for [Punjab](States).
+    - What was the expected rainfall in 2016 for [Rajasthan](States)?
+- intent: ask_rainfall_deviation_2016
+  examples: |
+    - What was the deviation in rainfall for [Uttar Pradesh](States) in 2016?
+    - Tell me the rainfall deviation for [Assam](States) in 2016.
+    - How much was the deviation in rainfall in 2016 for [Tamil Nadu](States)?
+- intent: nlu_fallback
+  examples: |
+    - Tell me the rainfall deviation for [[Assam](States](States)) in 2017.
+    - Tell me the rainfall deviation for [Assam](States) in 2017

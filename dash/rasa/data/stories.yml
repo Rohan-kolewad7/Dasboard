@@ -1,0 +1,251 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: confirm              # Change 'affirm' to 'confirm'
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry_ask_again
+
+- story: Bot introduction
+  steps:
+  - intent: bot_challenge         # User challenges the bot
+  - action: utter_bot_challenge       
+
+- story: User denies something
+  steps:
+  - intent: deny
+  - action: utter_sorry_ask_again
+
+- story: Bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge  # Change the action to utter_bot_challenge
+
+- story: User asks for help
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+
+- story: ask rainfall deviation 2017
+  steps:
+  - intent: ask_rainfall_deviation_2017
+  - action: action_ask_rainfall_deviation_2017
+  - intent: confirm  
+  - action: action_custom_rainfall_response
+
+- story: ask actual rainfall 2018
+  steps:
+  - intent: ask_rainfall_actual_2018
+  - action: action_ask_rainfall_actual_2018
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask normal rainfall 2018
+  steps:
+  - intent: ask_rainfall_normal_2018
+  - action: action_ask_rainfall_normal_2018
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask rainfall deviation 2018
+  steps:
+  - intent: ask_rainfall_deviation_2018
+  - action: action_ask_rainfall_deviation_2018
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask actual rainfall 2019
+  steps:
+  - intent: ask_rainfall_actual_2019
+  - action: action_ask_rainfall_actual_2019
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask normal rainfall 2019
+  steps:
+  - intent: ask_rainfall_normal_2019
+  - action: action_ask_rainfall_normal_2019
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask rainfall deviation 2019
+  steps:
+  - intent: ask_rainfall_deviation_2019
+  - action: action_ask_rainfall_deviation_2019
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask actual rainfall 2020
+  steps:
+  - intent: ask_rainfall_actual_2020
+  - action: action_ask_rainfall_actual_2020
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask normal rainfall 2020
+  steps:
+  - intent: ask_rainfall_normal_2020
+  - action: action_ask_rainfall_normal_2020
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask actual rainfall 2021
+  steps:
+  - intent: ask_rainfall_actual_2021
+  - action: action_ask_rainfall_actual_2021
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask normal rainfall 2021
+  steps:
+  - intent: ask_rainfall_normal_2021
+  - action: action_ask_rainfall_normal_2021
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask rainfall deviation 2021
+  steps:
+  - intent: ask_rainfall_deviation_2021
+  - action: action_ask_rainfall_deviation_2021
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask actual cumulative rainfall
+  steps:
+  - intent: ask_rainfall_actual_cumulative
+  - action: action_ask_rainfall_actual_cumulative
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask normal cumulative rainfall
+  steps:
+  - intent: ask_rainfall_normal_cumulative
+  - action: action_ask_rainfall_normal_cumulative
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask cumulative rainfall deviation
+  steps:
+  - intent: ask_rainfall_deviation_cumulative
+  - action: action_ask_rainfall_deviation_cumulative
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask actual rainfall 2014
+  steps:
+  - intent: ask_rainfall_actual_2014
+  - action: action_ask_rainfall_actual_2014
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask normal rainfall 2014
+  steps:
+  - intent: ask_rainfall_normal_2014
+  - action: action_ask_rainfall_normal_2014
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask rainfall deviation 2014
+  steps:
+  - intent: ask_rainfall_deviation_2014
+  - action: action_ask_rainfall_deviation_2014
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask actual rainfall 2015
+  steps:
+  - intent: ask_rainfall_actual_2015
+  - action: action_ask_rainfall_actual_2015
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask normal rainfall 2015
+  steps:
+  - intent: ask_rainfall_normal_2015
+  - action: action_ask_rainfall_normal_2015
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask rainfall deviation 2015
+  steps:
+  - intent: ask_rainfall_deviation_2015
+  - action: action_ask_rainfall_deviation_2015
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask actual rainfall 2016
+  steps:
+  - intent: ask_rainfall_actual_2016
+  - action: action_ask_rainfall_actual_2016
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask normal rainfall 2016
+  steps:
+  - intent: ask_rainfall_normal_2016
+  - action: action_ask_rainfall_normal_2016
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+- story: ask rainfall deviation 2016
+  steps:
+  - intent: ask_rainfall_deviation_2016
+  - action: action_ask_rainfall_deviation_2016
+  - intent: confirm
+  - action: action_custom_rainfall_response
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nlu_fallback
+  - intent: ask_rainfall_actual_2021
+    entities:
+    - States: Gujarat
+  - action: action_ask_rainfall_actual_2021
+  - intent: nlu_fallback
+    entities:
+    - States: Kerala](States
+  - action: action_default_fallback
+  - intent: deny
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nlu_fallback
+    entities:
+    - States: Assam](States
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: nlu_fallback
+    entities:
+    - States: Assam
