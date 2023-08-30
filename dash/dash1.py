@@ -14,10 +14,10 @@ st.markdown('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allo
 #     st.write(filename)
 #     df = pd.read_csv(fl, encoding="ISO-8859-1")
 # else:
-      github_csv_url = "https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/Atal_Jal_Area.csv"
+github_csv_url = "https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/Atal_Jal_Area.csv"
 
 # Read the CSV file from the GitHub repository
-      df = pd.read_csv(github_csv_url, encoding="ISO-8859-1")
+df = pd.read_csv(github_csv_url, encoding="ISO-8859-1")
 
 
 col1, col2 = st.columns((2))
