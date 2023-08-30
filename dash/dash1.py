@@ -76,8 +76,8 @@ if selected_states:
     else:
         st.write("State not found.")
 
-# # Download filtered data
-# csv_data = filtered_df.to_csv(index=False).encode("utf-8")
-# st.download_button("Download Filtered Data", data=csv_data, file_name="filtered_data.csv", mime="text/csv")
+# Download filtered data
+csv_data = filtered_df.to_csv(index=False).encode("utf-8")
+st.download_button("Download Filtered Data", data=csv_data, file_name="filtered_data.csv", mime="text/csv")
 
 
