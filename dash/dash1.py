@@ -14,7 +14,7 @@ if fl is not None:
     st.write(filename)
     df = pd.read_csv(fl, encoding="ISO-8859-1")
 else:
-    os.chdir(r"C:\Users\hp\Desktop\RohanProject\Dashboard\Git\Dasboard\Dash")  # Replace with your directory path
+    os.chdir("dash/Atal_Jal_Area.csv")  # Replace with your directory path
     df = pd.read_csv("Atal_Jal_Area.csv", encoding="ISO-8859-1")
 
 col1, col2 = st.columns((2))
