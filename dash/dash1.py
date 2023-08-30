@@ -14,8 +14,9 @@ if fl is not None:
     st.write(filename)
     df = pd.read_csv(fl, encoding="ISO-8859-1")
 else:
-      # Replace with your directory path
-    df = pd.read_csv("Atal_Jal_Area.csv", encoding="ISO-8859-1")
+      csv_file_path = "Atal_Jal_Area.csv"
+      df = pd.read_csv(csv_file_path, encoding="ISO-8859-1")
+
 
 col1, col2 = st.columns((2))
 
