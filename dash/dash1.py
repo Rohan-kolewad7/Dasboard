@@ -8,12 +8,12 @@ st.set_page_config(page_title="Atal Dashboard", page_icon=":bar_chart:", layout=
 st.title(":bar_chart: Atal CSV Data Analysis")
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html=True)
 
-fl = st.file_uploader(":file_folder: Upload a file", type=(["csv", "txt", "xlsx", "xls"]))
-if fl is not None:
-    filename = fl.name
-    st.write(filename)
-    df = pd.read_csv(fl, encoding="ISO-8859-1")
-else:
+# fl = st.file_uploader(":file_folder: Upload a file", type=(["csv", "txt", "xlsx", "xls"]))
+# if fl is not None:
+#     filename = fl.name
+#     st.write(filename)
+#     df = pd.read_csv(fl, encoding="ISO-8859-1")
+# else:
       github_csv_url = "https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/Atal_Jal_Area.csv"
 
 # Read the CSV file from the GitHub repository
@@ -76,8 +76,8 @@ if selected_states:
     else:
         st.write("State not found.")
 
-# Download filtered data
-csv_data = filtered_df.to_csv(index=False).encode("utf-8")
-st.download_button("Download Filtered Data", data=csv_data, file_name="filtered_data.csv", mime="text/csv")
+# # Download filtered data
+# csv_data = filtered_df.to_csv(index=False).encode("utf-8")
+# st.download_button("Download Filtered Data", data=csv_data, file_name="filtered_data.csv", mime="text/csv")
 
 
