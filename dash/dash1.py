@@ -8,16 +8,16 @@ st.set_page_config(page_title="Atal Dashboard", page_icon=":bar_chart:", layout=
 st.title(":bar_chart: Atal CSV Data Analysis")
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html=True)
 
-# fl = st.file_uploader(":file_folder: Upload a file", type=(["csv", "txt", "xlsx", "xls"]))
-# if fl is not None:
-#     filename = fl.name
-#     st.write(filename)
-#     df = pd.read_csv(fl, encoding="ISO-8859-1")
-# else:
-github_csv_url = "https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/Atal_Jal_Area.csv"
+fl = st.file_uploader(":file_folder: Upload a file", type=(["csv", "txt", "xlsx", "xls"]))
+if fl is not None:
+    filename = fl.name
+    st.write(filename)
+    df = pd.read_csv(fl, encoding="ISO-8859-1")
+else:
+    github_csv_url = "https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/Atal_Jal_Area.csv"
 
 # Read the CSV file from the GitHub repository
-df = pd.read_csv(github_csv_url, encoding="ISO-8859-1")
+    df = pd.read_csv(github_csv_url, encoding="ISO-8859-1")
 
 
 col1, col2 = st.columns((2))
