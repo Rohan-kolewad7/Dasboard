@@ -7,29 +7,44 @@ import seaborn as sns
 
 st.title("Water in India: A Dashboard of Information")
 
-# Load your CSV data into a DataFrame
-df_rainfall_state = pd.read_csv('Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv')
+rainfall_state_url = 'https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv'
+cleaned_url = 'https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv'
+surface_url = 'https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/SW_CPCP_and_CWC_Cleaned.csv'
+reservoirs_url = 'https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.csv'
 
-# Convert the 'Date' column to datetime format
+# Load CSV data into DataFrames
+df_rainfall_state = pd.read_csv(rainfall_state_url)
 df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'])
 
-
-# Load your CSV data into a DataFrame
-df_cleaned = pd.read_csv('Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv')
-
-# Convert the 'Date' column to datetime format
+df_cleaned = pd.read_csv(cleaned_url)
 df_cleaned['Date'] = pd.to_datetime(df_cleaned['Date'])
 
+df_surface = pd.read_csv(surface_url)
+df_reservoirs = pd.read_csv(reservoirs_url)
 
-# Load your CSV data into a DataFrame
-df_surface = pd.read_csv('SW_CPCP_and_CWC_Cleaned.csv')
+# # Load your CSV data into a DataFrame
+# df_rainfall_state = pd.read_csv('Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv')
+
+# # Convert the 'Date' column to datetime format
+# df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'])
 
 
-# Load your dataset into a DataFrame
-df_reservoirs = pd.read_csv('Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.csv')
+# # Load your CSV data into a DataFrame
+# df_cleaned = pd.read_csv('Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv')
 
-# Convert the 'Date' column to datetime format
-df_reservoirs['Date'] = pd.to_datetime(df_reservoirs['Date'])
+# # Convert the 'Date' column to datetime format
+# df_cleaned['Date'] = pd.to_datetime(df_cleaned['Date'])
+
+
+# # Load your CSV data into a DataFrame
+# df_surface = pd.read_csv('SW_CPCP_and_CWC_Cleaned.csv')
+
+
+# # Load your dataset into a DataFrame
+# df_reservoirs = pd.read_csv('Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.csv')
+
+# # Convert the 'Date' column to datetime format
+# df_reservoirs['Date'] = pd.to_datetime(df_reservoirs['Date'])
 
 
 
