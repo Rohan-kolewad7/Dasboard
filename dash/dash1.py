@@ -32,7 +32,7 @@ st.sidebar.header("Filters")
 
 # Check if the 'State_Name' column exists
 if "State_Name" not in df.columns:
-    df["State_Name"] = df["State"]
+    df["State_Name"] = df["State_Name"]
 
 # State filter
 selected_states = st.sidebar.multiselect("Select States", df["State_Name"].unique())
