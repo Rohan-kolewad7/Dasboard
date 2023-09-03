@@ -18,13 +18,13 @@ st.title("Water in India: A Dashboard of Information")
 # Get the shareable link to the Google Drive file
 
 # Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned
-g_drive_rainfall = "https://app.gigasheet.com/spreadsheet/Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned-csv/715b3419_cef0_4172_956a_32698abd72d1"
+g_drive_rainfall = "https://1drv.ms/u/s!AtaOXf3g8BKPbX-bm_YeOeOyrDA"
 
 # Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned
-g_drive_Sub_basin = "https://app.gigasheet.com/spreadsheet/Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned-csv/d184b6a7_030d_49ff_bc4e_d80e91851ed8"
+g_drive_Sub_basin = "https://1drv.ms/u/s!AtaOXf3g8BKPbrrj1tfOQO-Lmw0"
 
 # Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023
-g_drive_CWC_agency = "https://app.gigasheet.com/spreadsheet/Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023-csv/ab88b1fc_d99e_45b2_8558_0bb0af5de633"
+g_drive_CWC_agency = "https://1drv.ms/u/s!AtaOXf3g8BKPbIGgeLqi5gmgWmY"
 
 # Read the CSV file from Google Drive
 #df = pd.read_csv(google_drive_link)
