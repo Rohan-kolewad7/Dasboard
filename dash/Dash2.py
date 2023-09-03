@@ -2,7 +2,8 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 import plotly.express as px
-import seaborn as sns
+import seaborn as sns
+
 
 
 st.title("Water in India: A Dashboard of Information")
@@ -31,7 +32,7 @@ g_drive_CWC_agency = "https://1drv.ms/u/s!AtaOXf3g8BKPbIGgeLqi5gmgWmY"
 
 
 # Load CSV data into DataFrames
-df_rainfall_state = pd.read_csv(g_drive_rainfall,low_memory=False)
+df_rainfall_state = pd.read_csv(g_drive_rainfall,encoding='utf-8,low_memory=False)
 df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'], format='%d-%m-%Y')
 
 #df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'])
@@ -39,11 +40,11 @@ df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'], format='%d
 
 
 
-df_cleaned = pd.read_csv(g_drive_Sub-basin,low_memory=False)
+df_cleaned = pd.read_csv(g_drive_Sub-basin,encoding='utf-8,low_memory=False)
 df_cleaned['Date'] = pd.to_datetime(df_cleaned['Date'])
 
 df_surface = pd.read_csv(surface_url,low_memory=False)
-df_reservoirs = pd.read_csv(g_drive_CWC_agency,low_memory=False)
+df_reservoirs = pd.read_csv(g_drive_CWC_agency,encoding='utf-8,low_memory=False)
 
 
 
