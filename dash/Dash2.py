@@ -19,13 +19,13 @@ st.title("Water in India: A Dashboard of Information")
 # Get the shareable link to the Google Drive file
 
 # Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned
-g_drive_rainfall = "https://1drv.ms/u/s!AtaOXf3g8BKPbX-bm_YeOeOyrDA"
+g_drive_rainfall = "https://storage.cloud.google.com/roh-dash/Dashboard/Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv"
 
 # Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned
-g_drive_Sub_basin = "https://1drv.ms/u/s!AtaOXf3g8BKPbrrj1tfOQO-Lmw0"
+g_drive_Sub_basin = "https://storage.cloud.google.com/roh-dash/Dashboard/Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv"
 
 # Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023
-g_drive_CWC_agency = "https://1drv.ms/u/s!AtaOXf3g8BKPbIGgeLqi5gmgWmY"
+g_drive_CWC_agency = "https://storage.cloud.google.com/roh-dash/Dashboard/Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.csv"
 
 # Read the CSV file from Google Drive
 #df = pd.read_csv(google_drive_link)
