@@ -31,8 +31,7 @@ g_drive_CWC_agency = "https://docs.google.com/spreadsheets/d/1NK3pVebnRxcKzmtAn-
 
 
 # Load CSV data into DataFrames
-df_rainfall_state = pd.DataFrame(pd.read_csv(g_drive_rainfall, chunksize=100, skiprows=6))
-
+df_rainfall_state = pd.DataFrame(pd.read_excel(g_drive_rainfall, sheet_name='Sheet1', skiprows=12))
 df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'], format='%d-%m-%Y')
 
 #df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'])
