@@ -21,7 +21,7 @@ st.title("Water in India: A Dashboard of Information")
 g_drive_rainfall = "https://docs.google.com/spreadsheets/d/1XAdakIiH5xXRofKafi4ErjzjfjQu4UYO5w0zpvlK8Os/edit?usp=sharing"
 
 # Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned
-g_drive_Sub-basin = "https://docs.google.com/spreadsheets/d/1XKxrZeUBNWBPfI-bt21ubmql1w3ha4LfTL7znQ4Uh8s/edit?usp=sharing"
+g_drive_Sub_basin = "https://docs.google.com/spreadsheets/d/1XKxrZeUBNWBPfI-bt21ubmql1w3ha4LfTL7znQ4Uh8s/edit?usp=sharing"
 
 # Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023
 g_drive_CWC_agency = "https://docs.google.com/spreadsheets/d/1NK3pVebnRxcKzmtAn-WkMerZP_OKO9GaZFOHIR2Ro0M/edit?usp=sharing"
