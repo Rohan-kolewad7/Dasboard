@@ -31,7 +31,7 @@ g_drive_CWC_agency = "https://app.gigasheet.com/spreadsheet/Daily_data_of_reserv
 
 
 # Load CSV data into DataFrames
-df_rainfall_state = pd.read_excel(g_drive_rainfall)
+df_rainfall_state = pd.read_csv(g_drive_rainfall)
 df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'], format='%d-%m-%Y')
 
 #df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'])
