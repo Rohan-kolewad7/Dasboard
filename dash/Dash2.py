@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import plotly.express as px
 import seaborn as sns
+import openpyxl
 
 
 st.title("Water in India: A Dashboard of Information")
