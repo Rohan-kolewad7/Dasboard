@@ -31,13 +31,13 @@ g_drive_CWC_agency = "https://docs.google.com/spreadsheets/d/1NK3pVebnRxcKzmtAn-
 
 
 # Load CSV data into DataFrames
-df_rainfall_state = pd.read_csv(g_drive_rainfall)
+df_rainfall_state = pd.read_csv(g_drive_rainfall,chunksize=100)
 df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'])
 
-df_cleaned = pd.read_csv(g_drive_Sub-basin)
+df_cleaned = pd.read_csv(g_drive_Sub-basin,chunksize=100)
 df_cleaned['Date'] = pd.to_datetime(df_cleaned['Date'])
 
-df_surface = pd.read_csv(surface_url)
+df_surface = pd.read_csv(surface_url,chunksize=100)
 df_reservoirs = pd.read_csv(g_drive_CWC_agency)
 
 
