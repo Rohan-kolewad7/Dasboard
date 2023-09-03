@@ -2,8 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 import plotly.express as px
-import seaborn as sns
-import openpyxl
+import seaborn as sns
 
 
 st.title("Water in India: A Dashboard of Information")
@@ -14,25 +13,25 @@ st.title("Water in India: A Dashboard of Information")
 # reservoirs_url = 'https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.csv'
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## using G-drive for load Csv into dataframes
+## using Giga-sheet for load Csv into dataframes
 
 # Get the shareable link to the Google Drive file
 
 # Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned
-g_drive_rainfall = "https://docs.google.com/spreadsheets/d/1XAdakIiH5xXRofKafi4ErjzjfjQu4UYO5w0zpvlK8Os/edit?usp=sharing"
+g_drive_rainfall = "https://app.gigasheet.com/spreadsheet/Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned-csv/715b3419_cef0_4172_956a_32698abd72d1"
 
 # Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned
-g_drive_Sub_basin = "https://docs.google.com/spreadsheets/d/1XKxrZeUBNWBPfI-bt21ubmql1w3ha4LfTL7znQ4Uh8s/edit?usp=sharing"
+g_drive_Sub_basin = "https://app.gigasheet.com/spreadsheet/Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned-csv/d184b6a7_030d_49ff_bc4e_d80e91851ed8"
 
 # Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023
-g_drive_CWC_agency = "https://docs.google.com/spreadsheets/d/1NK3pVebnRxcKzmtAn-WkMerZP_OKO9GaZFOHIR2Ro0M/edit?usp=sharing"
+g_drive_CWC_agency = "https://app.gigasheet.com/spreadsheet/Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023-csv/ab88b1fc_d99e_45b2_8558_0bb0af5de633"
 
 # Read the CSV file from Google Drive
 #df = pd.read_csv(google_drive_link)
 
 
 # Load CSV data into DataFrames
-df_rainfall_state = pd.read_excel(g_drive_rainfall, sheet_name='Sheet1', skiprows=12, engine='openpyxl')
+df_rainfall_state = pd.read_excel(g_drive_rainfall)
 df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'], format='%d-%m-%Y')
 
 #df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'])
