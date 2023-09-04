@@ -7,53 +7,12 @@ import seaborn as sns
 
 
 st.title("Water in India: A Dashboard of Information")
-
-# rainfall_state_url = 'https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv'
-# cleaned_url = 'https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv'
-# surface_url = 'https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/SW_CPCP_and_CWC_Cleaned.csv'
-# reservoirs_url = 'https://raw.githubusercontent.com/Rohan-kolewad7/Dasboard/main/dash/Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.csv'
-
-#------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## using Giga-sheet for load Csv into dataframes
-
-# Get the shareable link to the Google Drive file
-
-# Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned
-g_drive_rainfall = "https://storage.cloud.google.com/roh-dash/Dashboard/Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv"
-
-# Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned
-g_drive_Sub_basin = "https://storage.cloud.google.com/roh-dash/Dashboard/Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv"
-
-# Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023
-g_drive_CWC_agency = "https://storage.cloud.google.com/roh-dash/Dashboard/Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.csv"
-
-# Read the CSV file from Google Drive
-#df = pd.read_csv(google_drive_link)
-
-
-# Load CSV data into DataFrames
-
-
-# Read the CSV file with a specific delimiter (e.g., tab)
-df_rainfall_state = pd.read_csv(g_drive_rainfall, encoding='utf-8', sep='\t', low_memory=False)
-
-df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'], format='%d-%m-%Y')
-
-#df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'])
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
-df_cleaned = pd.read_csv(g_drive_Sub-basin,encoding='utf-8', sep='\t',low_memory=False)
-df_cleaned['Date'] = pd.to_datetime(df_cleaned['Date'])
-
-df_surface = pd.read_csv(surface_url,low_memory=False)
-df_reservoirs = pd.read_csv(g_drive_CWC_agency,encoding='utf-8', sep='\t',low_memory=False)
-
-
-
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # # Load your CSV data into a DataFrame
 # df_rainfall_state = pd.read_csv('Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv')
 
