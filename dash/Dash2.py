@@ -3,11 +3,46 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import plotly.express as px
 import seaborn as sns
+import requests
+from zipfile import ZipFile
+from io import BytesIO
 
 
 
 st.title("Water in India: A Dashboard of Information")
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#file Loading method
+
+# Function to read a CSV file from a zip archive
+def read_csv_from_zip(zip_url, csv_filename):
+    response = requests.get(zip_url)
+    if response.status_code == 200:
+        with ZipFile(BytesIO(response.content)) as zip_file:
+            with zip_file.open(csv_filename) as csv_file:
+                df = pd.read_csv(csv_file)
+                return df
+    else:
+        st.error("Failed to fetch data from the ZIP archive.")
+        return None
+
+# URLs to your zip files on GitHub
+zip_file_urls = [
+    'https://github.com/Rohan-kolewad7/Dasboard/blob/main/dash/Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.zip',
+    'https://github.com/Rohan-kolewad7/Dasboard/blob/main/dash/Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.zip',
+    'https://github.com/Rohan-kolewad7/Dasboard/blob/main/dash/SW_CPCP_and_CWC_Cleaned.zip',
+    'https://github.com/Rohan-kolewad7/Dasboard/blob/main/dash/Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.zip'
+]
+
+# Read the CSV files from the zip archives
+df_rainfall_state = read_csv_from_zip(zip_file_urls[0], 'Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv')
+df_cleaned = read_csv_from_zip(zip_file_urls[1], 'Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv')
+df_surface = read_csv_from_zip(zip_file_urls[2], 'SW_CPCP_and_CWC_Cleaned.csv')
+df_reservoirs = read_csv_from_zip(zip_file_urls[3], 'Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.csv')
+
+# Now, you have DataFrames df_rainfall_state, df_cleaned, df_surface, and df_reservoirs
+# containing the data from the CSV files within the zip archives.
+
+# You can use these DataFrames to build your Streamlit app.
 
 
 
@@ -17,25 +52,25 @@ st.title("Water in India: A Dashboard of Information")
 # df_rainfall_state = pd.read_csv('Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv')
 
 # # Convert the 'Date' column to datetime format
-# df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'])
+ df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'])
 
 
 # # Load your CSV data into a DataFrame
 # df_cleaned = pd.read_csv('Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv')
 
 # # Convert the 'Date' column to datetime format
-# df_cleaned['Date'] = pd.to_datetime(df_cleaned['Date'])
+ df_cleaned['Date'] = pd.to_datetime(df_cleaned['Date'])
 
 
 # # Load your CSV data into a DataFrame
-# df_surface = pd.read_csv('SW_CPCP_and_CWC_Cleaned.csv')
+df_surface = pd.read_csv('SW_CPCP_and_CWC_Cleaned.csv')
 
 
 # # Load your dataset into a DataFrame
 # df_reservoirs = pd.read_csv('Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.csv')
 
 # # Convert the 'Date' column to datetime format
-# df_reservoirs['Date'] = pd.to_datetime(df_reservoirs['Date'])
+df_reservoirs['Date'] = pd.to_datetime(df_reservoirs['Date'])
 
 
 
