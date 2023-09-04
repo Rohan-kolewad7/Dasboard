@@ -27,10 +27,10 @@ def read_csv_from_zip(zip_url, csv_filename):
 
 # URLs to your zip files on GitHub
 zip_file_urls = [
-    'https://github.com/Rohan-kolewad7/Dasboard/blob/main/dash/Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.zip',
-    'https://github.com/Rohan-kolewad7/Dasboard/blob/main/dash/Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.zip',
-    'https://github.com/Rohan-kolewad7/Dasboard/blob/main/dash/SW_CPCP_and_CWC_Cleaned.zip',
-    'https://github.com/Rohan-kolewad7/Dasboard/blob/main/dash/Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.zip'
+    'https://github.com/Rohan-kolewad7/Dasboard/raw/main/dash/Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.zip',
+    'https://github.com/Rohan-kolewad7/Dasboard/raw/main/dash/Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.zip',
+    'https://github.com/Rohan-kolewad7/Dasboard/raw/main/dash/SW_CPCP_and_CWC_Cleaned.zip',
+    'https://github.com/Rohan-kolewad7/Dasboard/raw/main/dash/Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.zip'
 ]
 
 # Read the CSV files from the zip archives
