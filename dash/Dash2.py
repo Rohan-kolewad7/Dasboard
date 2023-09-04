@@ -38,6 +38,8 @@ df_rainfall_state = read_csv_from_zip(zip_file_urls[0], 'Daily_Rainfall_data_fro
 df_cleaned = read_csv_from_zip(zip_file_urls[1], 'Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv')
 df_surface = read_csv_from_zip(zip_file_urls[2], 'SW_CPCP_and_CWC_Cleaned.csv')
 df_reservoirs = read_csv_from_zip(zip_file_urls[3], 'Daily_data_of_reservoir_level_of_CWC_Agency_2000_2023.csv')
+st.write(df_reservoirs.head())  # Display the first few rows of the DataFrame
+
 
 # Now, you have DataFrames df_rainfall_state, df_cleaned, df_surface, and df_reservoirs
 # containing the data from the CSV files within the zip archives.
