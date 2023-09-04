@@ -54,14 +54,14 @@ st.write(df_reservoirs.head())  # Display the first few rows of the DataFrame
 # df_rainfall_state = pd.read_csv('Daily_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv')
 
 # # Convert the 'Date' column to datetime format
- df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'])
+df_rainfall_state['Date'] = pd.to_datetime(df_rainfall_state['Date'])
 
 
 # # Load your CSV data into a DataFrame
 # df_cleaned = pd.read_csv('Daily_Sub-basin-wise_Rainfall_data_from_IMD_and_NRSC_2018_2023_Cleaned.csv')
 
 # # Convert the 'Date' column to datetime format
- df_cleaned['Date'] = pd.to_datetime(df_cleaned['Date'])
+df_cleaned['Date'] = pd.to_datetime(df_cleaned['Date'])
 
 
 # # Load your CSV data into a DataFrame
